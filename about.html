@@ -1,0 +1,130 @@
+{%extends 'base.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Contact</title>
+
+    {% block base_style%}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'styles/about.css' %}">
+    {% endblock base_style%}
+</head>
+
+<body>
+    {% block content %}
+
+    <div id="about-container">
+
+        <div id="title">
+            <h1>
+                About us!
+            </h1>
+            <p class="space">
+                Our web application project is to revolutionize the drinking water industry through an innovative billing
+                 and accounting system which is dedicated by using the latest e-technologies and online tools. 
+                We simplify the billing processes and creating a user-centric platform with the aim of enhancing the user experience.
+                 Our mission is to help consumers and providers to manage water consumption, provide quick billing information, 
+                 and help to manage personal account to offer a seamless and transparent system to enable account management. 
+                 Billing and management of essential utilities, ensuring a future of convenience and efficiency in billing 
+                 and management is the main focus of this project.
+                It is our commitment to redefine the landscape of water services by integrating technologies  to create a more efficient, and
+                 responsive water services ecosystem.
+                
+            </p>
+
+            <h1>
+                Our features are as follows:
+            </h1>
+
+        </div>
+
+        <div id="rest-details-content">
+            <div id="content-div">
+                <h1>Billing and Account Management</h1>
+                <p class="space">
+                    <strong>How we provide it:</strong><br>
+                    Our platform provides an intuitive and user-friendly interface for managing billing and accounts.
+                    Through a secure login, customers can access their billing information, review consumption history, and
+                    payment methods can be easily managed. Timely updates with automatic billing notifications ensures ease of use, 
+                    while customizable preferences to users according to their needs empowers you to customize the billing experience.
+                    Other details:
+
+                <ul class="about-content">
+                    <li><strong>Customizable Options:</strong> 
+                        Billing alerts with users, payments and the flexibility to set preferences for reminders,
+                         and consumption thresholds.</li>
+                    <li><strong>Detailed reports:</strong> 
+                        Detailed billing statements and consumption reports for easy reference and analysis.</li>
+                    <li><strong>Secure Transactions:</strong> 
+                        We prioritize data security for sensitive billing and apply strong encryption methods to protect 
+                        information.</li>
+                </ul>
+                </p>
+                <button>view More
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+
+            <div id="content-div">
+                <h1>Real time consumption monitoring</h1>
+                <p class="space">
+                    <strong>How we provide it:</strong>
+                    Our platform includes advanced monitoring tools that enable real-time tracking of water consumption.
+                    Users can access detailed usage analytics and track their water consumption allowing an 
+                    efficient monitoring and management. Smart meter integration provides accurate data,
+                    empowering customers to make informed decisions about their water use.
+
+                    Other details:
+                <ul>
+                    <li><strong>Live data feeds:</strong> Users can view live consumption data,
+                        enabling them to track usage patterns and make informed adjustments.</li>
+                    <li><strong>Usage Insights:</strong> Insights into consumption trends with analytical tools
+                        provides assistance in conservation efforts and cost management.</li>
+                    <li><strong>Alerts and Notifications: </strong>Automatic alerts for unusual usage patterns or leaks
+                        provides proactive measures to address any potential problems.</li>
+                </ul>
+                </p>
+                <button>view More
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+
+            </div>
+
+            <div id="content-div">
+                <h1>Enhanced customer support and assistance</h1>
+                <p class="space"><strong>How we provide it:</strong>
+                    Our platform ensures dedicated customer support through various channels with which the users
+                    have access to a responsive support team that addresses billing questions, technical issues, 
+                    account management and provides assistance. In addition, extensive FAQs and tutorials for common 
+                    questions provides self-help resources.
+                    Other details:
+                <ul>
+                    <li><strong>24/7 support:</strong> Our support team promptly addresses user concerns and questions
+                        and are available 24 hours a day.</li>
+                    <li><strong>User guides and resources:</strong>Detailed guides and resources are available online,
+                        providing step-by-step instructions and troubleshooting tips.</li>
+                    <li> <strong>Reaction mechanism:</strong>We value user and customer feedback
+                        and continuously improve our services based on feedback and experience.</li>
+                    </p>
+                </ul>
+                <button>view More
+
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+
+        </div>  
+    </div>
+
+
+    {% endblock %}
+
+
+
+</body>
+
+</html>
