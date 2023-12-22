@@ -1,0 +1,111 @@
+{%extends 'base.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Contact</title>
+
+    {% block base_style%}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'styles/contact.css' %}">
+    {% endblock base_style%}
+</head>
+
+<body>
+    {% block content %}
+
+
+    <div id="contact-main">
+
+        <!-- Yo na chalne form ho -->
+        <form action="" method="post">
+            {% csrf_token %}
+            <div id="contact-container">
+                <div id="contact-field">
+                    <h2>Have any <span>queries?</span></h2>
+                    <h1>Contact Form</h1>
+                    <label for="">
+                        <i class="ri-pass-valid-fill"></i>
+                        <input type="text" name="name" placeholder="Enter Your Name ">
+                    </label>
+
+
+                    <label for="">
+                        <i class="ri-home-smile-fill"></i>
+                        <input type="text" name="address" text="address" placeholder="Enter Your Address">
+                    </label>
+
+                    <label for="">
+                        <i class="ri-phone-fill"></i>
+                        <input type="text" name="phone" placeholder="Enter Your Phone">
+                    </label>
+
+                    <label for="">
+                        <i class="ri-mail-fill"></i>
+                        <input type="email" name="email" placeholder="Enter Your Email">
+                    </label>
+
+                    <label for="" class="textarea">
+                        <i class="ri-message-2-line"></i>
+                        <textarea name="message" id="" cols="30" rows="6"
+                            placeholder="Write Yor Message Here ..."></textarea>
+                    </label>
+                    <input type="submit" value="submit" id="submit-button">
+                </div>
+            </div>
+        </form>
+        <div class="contact-note">
+            <fieldset>
+                <legend>
+                    <h3>Note:</h3>
+                </legend>
+
+                <p>Thank you for considering drinking water for your hydration needs. Your trust in our products and services is 
+                    very important to us.<br>
+                    At Drinking Water, we are committed to excellence in providing you with pure, safe, and refreshing water solutions.
+                    We understand the importance of clean water in your life and strive to ensure that our products meet quality standards
+                     that exceed your expectations.
+                </p>
+                <fieldset>
+                    <legend><strong>Your feedback is important</strong></legend>
+                    <p>
+                        Your feedback is invaluable to us. We appreciate any comments, suggestions, or feedback you may have about your 
+                        overall experience with our products, services, or drinking water. Your insights help us continually improve and 
+                        adapt our offerings to better serve your needs. <br>
+
+
+                        Our commitment to you<br>
+
+                        Rest assured that every message and inquiry sent through this contact form receives our full attention. Our team 
+                        is dedicated to promptly addressing your questions, providing solutions, and providing you with the support you deserve.<br>
+
+                        We are here for you<br>
+
+                        If you have questions about our filtration systems, need guidance on maintenance, or want to learn more about our 
+                        bottled water delivery services, feel free to use the contact form or reach out through our E-mail.<br>
+
+
+                        Thank you for choosing Drinking Water. We look forward to supporting you and being a part of your journey to a healthier 
+                        and more hydrated life.
+                        <br>
+                        Sincerely,<br>
+
+                        <b> Drinking Water Team</b>
+                    </p>
+                </fieldset>
+            </fieldset>
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script>
+
+    </script>
+    {% endblock %}
+</body>
+
+</html>
